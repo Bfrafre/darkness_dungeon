@@ -99,7 +99,7 @@ class _GameState extends State<Game>
           ],
         ),
         player: Knight(
-          initPosition: Vector2(2 * tileSize, 3 * tileSize),
+          initPosition: Vector2(87 * tileSize, 87 * tileSize),
         ),
         map: TiledWorldMap(
           'tiled/map.json',
@@ -120,11 +120,11 @@ class _GameState extends State<Game>
           },
         ),
         interface: KnightInterface(),
-        lightingColorGame: Colors.black.withOpacity(0.6),
-        background: BackgroundColorGame(Colors.grey[900]),
+        //lightingColorGame: Colors.black.withOpacity(0),
+        background: BackgroundColorGame(Colors.blue.shade600),
         progress: Center(
           child: Text(
-            "Loading...",
+            "Yo just wait a second...",
             style: TextStyle(
               color: Colors.white,
               fontFamily: 'Normal',

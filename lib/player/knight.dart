@@ -24,7 +24,7 @@ class Knight extends SimplePlayer with Lighting, ObjectCollision {
           width: tileSize,
           height: tileSize,
           position: initPosition,
-          life: 200,
+          life: 2000,
           speed: tileSize / 0.25,
         ) {
     setupCollision(
@@ -45,7 +45,7 @@ class Knight extends SimplePlayer with Lighting, ObjectCollision {
       LightingConfig(
         radius: width * 1.5,
         blurBorder: width,
-        color: Colors.deepOrangeAccent.withOpacity(0.2),
+        color: Colors.deepOrangeAccent.withOpacity(0),
       ),
     );
   }
@@ -91,7 +91,7 @@ class Knight extends SimplePlayer with Lighting, ObjectCollision {
     }
 
     Sounds.attackPlayerMelee();
-    decrementStamina(15);
+    decrementStamina(1);
     this.simpleAttackMelee(
       damage: attack,
       animationBottom: PlayerSpriteSheet.attackEffectBottom(),
