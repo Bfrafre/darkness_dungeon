@@ -9,7 +9,7 @@ import 'package:flutter/widgets.dart';
 
 class MiniBoss extends SimpleEnemy with ObjectCollision {
   final Vector2 initPosition;
-  double attack = 50;
+  double attack = 1;
   bool _seePlayerClose = false;
 
   MiniBoss(this.initPosition)
@@ -19,7 +19,7 @@ class MiniBoss extends SimpleEnemy with ObjectCollision {
           width: tileSize * 0.68,
           height: tileSize * 0.93,
           speed: tileSize / 0.35,
-          life: 150,
+          life: 2,
         ) {
     setupCollision(
       CollisionConfig(

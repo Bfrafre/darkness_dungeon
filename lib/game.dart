@@ -121,10 +121,10 @@ class _GameState extends State<Game>
         ),
         interface: KnightInterface(),
         //lightingColorGame: Colors.black.withOpacity(0),
-        background: BackgroundColorGame(Colors.blue.shade600),
+        background: BackgroundColorGame(Colors.grey.shade300),
         progress: Center(
           child: Text(
-            "Yo just wait a second...",
+            "Hollup a sec...",
             style: TextStyle(
               color: Colors.white,
               fontFamily: 'Normal',

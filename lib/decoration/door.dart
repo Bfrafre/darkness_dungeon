@@ -34,7 +34,7 @@ class Door extends GameDecoration with ObjectCollision {
     this.seeComponentType<Player>(
       observed: (player) {
         if (!open) {
-          if ((player as Knight).containKey) {
+          if ((player.first as Knight).containKey) {
             open = true;
             gameRef.add(
               AnimatedObjectOnce(

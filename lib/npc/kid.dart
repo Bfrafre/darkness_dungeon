@@ -62,6 +62,13 @@ class Kid extends GameDecoration {
         ),
         personSayDirection: PersonSayDirection.LEFT,
       ),
+      Say(
+        text: [TextSpan(text: getString('talk_kid_3'))],
+        person: CustomSpriteAnimationWidget(
+          animation: NpcSpriteSheet.kidIdleLeft(),
+        ),
+        personSayDirection: PersonSayDirection.RIGHT,
+      ),
     ], onFinish: () {
       Sounds.interaction();
       gameRef.camera.moveToPlayerAnimated(finish: () {

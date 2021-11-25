@@ -17,7 +17,7 @@ import 'package:flutter/widgets.dart';
 
 class Boss extends SimpleEnemy with ObjectCollision {
   final Vector2 initPosition;
-  double attack = 40;
+  double attack = 1;
 
   bool addChild = false;
   bool firstSeePlayer = false;
@@ -29,7 +29,7 @@ class Boss extends SimpleEnemy with ObjectCollision {
           width: tileSize * 1.5,
           height: tileSize * 1.7,
           speed: tileSize / 0.35,
-          life: 200,
+          life: 2,
         ) {
     setupCollision(
       CollisionConfig(
